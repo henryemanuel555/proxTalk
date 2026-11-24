@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stest.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>ProxTalk:)</h1>
+        
+    </header>
+
+    <div class="nav-bar">
+        <a href="homepg.html">Home</a>  
+        <a href="mensagens.html">Mensagens</a>
+        <a href="#">Sobre-nós</a>
+        <a href="conta.html">Conta</a>
+    </div><br>
+
+    <div class="criar-post">
+        <form class="form-post">
+            <textarea class="campo-post" rows="4" placeholder="Digite seu post aqui..."></textarea>
+
+            <div class="acoes-post">
+                <label for="foto-post" class="btn-foto">📷 Adicionar foto</label>
+                <input type="file" id="foto-post" class="input-arquivo" accept="image/*">
+                <button type="submit" class="btn-enviar">Postar</button>
+            </div>
+        </form>
+    </div>
+
+    <section class="feed-posts">
+        <article class="post-card">
+            <div class="post-cabecalho">
+                <span class="post-autor">Maria</span>
+                <img src="foto-maria.png" class="post-avatar">
+            </div>
+
+            <img src="foto-post.png" class="post-imagem">
+            <p class="post-conteudo">Este é o conteúdo do post de Maria!</p>
+
+            <div class="post-rodape">
+                <button class="btn-curtir">Curtir</button>        
+            </div>
+        </article>
+
+        <article class="post-card">
+            <div class="post-cabecalho">
+                <span class="post-autor">Decade</span>
+                <img src="foto-decade.png" class="post-avatar">
+            </div>
+
+            <img src="foto-post.png" class="post-imagem">
+            <p class="post-conteudo">Este é o conteúdo do post de Decade!</p>
+
+            <div class="post-rodape">
+                <button class="btn-curtir">Curtir</button>        
+            </div>
+        </article>
+    </section>
+</body>
+</html>
