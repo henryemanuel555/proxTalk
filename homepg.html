@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stest.css">
+    <script src="scripth.js" defer></script>
+</body>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="Logo" class="logo">
         <h1>ProxTalk:)</h1>
         
+        <a href="#">Entrar / cadastrar</a>
     </header>
-
+    <!--Navegação-->
     <div class="nav-bar">
         <a href="homepg.html">Home</a>  
         <a href="mensagens.html">Mensagens</a>
@@ -20,46 +24,158 @@
         <a href="conta.html">Conta</a>
     </div><br>
 
-    <div class="criar-post">
-        <form class="form-post">
-            <textarea class="campo-post" rows="4" placeholder="Digite seu post aqui..."></textarea>
+    
 
-            <div class="acoes-post">
-                <label for="foto-post" class="btn-foto">📷 Adicionar foto</label>
-                <input type="file" id="foto-post" class="input-arquivo" accept="image/*">
-                <button type="submit" class="btn-enviar">Postar</button>
+    <div class="container-fluid mt-4">
+       <div class="row">
+
+        <!--Perfil-->
+        <aside class="col-12 col-lg-3 mb-4">
+            <div class="card-perfil">
+                <div class="perfil-cabecalho">
+                    <div class="card-perfil">
+    <div class="perfil-cabecalho">
+        <img src="foto-usuario.png" alt="Foto de perfil" class="perfil-avatar">
+        
+        <div class="perfil-dados">
+            <span class="perfil-nome">João Silva</span><br>
+            <span class="perfil-arroba">@joaosilva</span>
+            <div class="perfil-status">
+                <span class="status-bolinha"></span>
+                <span class="perfil-status">Online</span>
             </div>
-        </form>
+        </div>
     </div>
 
-    <section class="feed-posts">
-        <article class="post-card">
-            <div class="post-cabecalho">
-                <span class="post-autor">Maria</span>
-                <img src="foto-maria.png" class="post-avatar">
+    <p class="perfil-bio">
+        Entusiasta de tecnologia, café e boas conversas por aqui.
+    </p>
+</div>
+            </div>
+        </aside>
+
+        <!--Post e postagens-->
+        <main class="col-12 col-lg-6">
+            <div class="criar-post">
+                <form class="form-post">
+                    <textarea class="campo-post" rows="4" placeholder="Digite seu post aqui..."></textarea>
+
+                    <div class="acoes-post">
+                        <label for="foto-post" class="btn-foto">📷 Adicionar foto</label>
+                        <input type="file" id="foto-post" class="input-arquivo" accept="image/*">
+                        <button type="submit" class="btn-enviar">Postar</button>
+                    </div>
+                </form>
             </div>
 
-            <img src="foto-post.png" class="post-imagem">
-            <p class="post-conteudo">Este é o conteúdo do post de Maria!</p>
+            <section class="feed-posts">
+                <article class="post-card">
+                    <div class="post-cabecalho">
+                        <span class="post-autor">Maria</span>
+                        <img src="foto-maria.png" class="post-avatar">
+                    </div>
 
-            <div class="post-rodape">
-                <button class="btn-curtir">Curtir</button>        
+                    <img src="foto-post.png" class="post-imagem">
+                    <p class="post-conteudo">Este é o conteúdo do post de Maria!</p>
+
+                    <div class="post-rodape">
+                        <button class="btn-curtir">Curtir</button>        
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-cabecalho">
+                        <span class="post-autor">Decade</span>
+                        <img src="foto-decade.png" class="post-avatar">
+                    </div>
+
+                    <img src="foto-post.png" class="post-imagem">
+                    <p class="post-conteudo">Este é o conteúdo do post de Decade!</p>
+
+                    <div class="post-rodape">
+                        <button class="btn-curtir">Curtir</button>        
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!--For-you-->
+        <aside class="col-12 col-lg-3 mb-4">
+            <div class="card-para-voce">
+                <h2 class="para-voce-titulo">Para Você</h2>
+
+                <ul class="sugestoes-lista">
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-ana.png" alt="Ana Clara" class="sugestao-avatar">
+                            <span class="sugestao-nome">Ana Clara</span>
+                        </div>
+                        <button type="button" id="btn-seguir-1" class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+                </ul>
+
+                <div class="para-voce-tags">
+                    <a href="#" class="tag-link">#Tecnologia</a>
+                    <a href="#" class="tag-link">#Arte</a>
+                    <a href="#" class="tag-link">#Design</a>
+                </div>
             </div>
-        </article>
+        </aside>
 
-        <article class="post-card">
-            <div class="post-cabecalho">
-                <span class="post-autor">Decade</span>
-                <img src="foto-decade.png" class="post-avatar">
-            </div>
+    </div>
+</div>
 
-            <img src="foto-post.png" class="post-imagem">
-            <p class="post-conteudo">Este é o conteúdo do post de Decade!</p>
-
-            <div class="post-rodape">
-                <button class="btn-curtir">Curtir</button>        
-            </div>
-        </article>
-    </section>
+<footer> 
+    <p><strong>ProxTalk:)</strong>  • Conectando pessoas e ideias de forma simples. © 2026</p>
+</footer>
+    
 </body>
 </html>
