@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProxTalk:) - Conta</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="x-icon.png">
     <link rel="stylesheet" href="stest.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
 </head>
@@ -16,11 +16,52 @@
     </header>
 
     <div class="nav-bar">
-        <a href="homepg.html">Home</a>
+        <a href="homepg.html">Home</a>  
         <a href="mensagens.html">Mensagens</a>
-        <a href="#">Sobre-nós</a>
+        <a href="comunidades.html">Comunidade</a>
         <a href="conta.html">Conta</a>
+        <a href="#">Sobre-nós</a>
     </div><br>
+
+    <main class="conta-area">
+
+        <div class="conta-card">
+
+            <h2 class="conta-titulo">Minha Conta</h2>
+
+        <!-- Foto de perfil e opção de mudar -->
+        <div class="conta-foto-box">
+            <img src="foto-usuario.jpg" alt="Foto de perfil" class="conta-avatar">
+            <label for="conta-foto-input" class="conta-btn-foto">Alterar foto</label>
+            <input type="file" id="conta-foto-input" accept="image/*" hidden>
+        </div>
+
+        <!-- Dados do usuário -->
+        <form class="conta-form">
+            <div class="conta-campo">
+                <label for="conta-nome">Nome</label>
+                <input type="text" id="conta-nome" value="Bilbo Bolseiro">
+            </div>
+
+            <div class="conta-campo">
+                <label for="conta-usuario">Usuário</label>
+                <input type="text" id="conta-usuario" value="@faizblaster555">
+            </div>
+
+            <div class="conta-campo">
+                <label for="conta-senha">Senha</label>
+                <input type="password" id="conta-senha" value="********">
+            </div>
+
+            <button type="submit" class="conta-btn-salvar">Salvar Alterações</button>
+        </form>
+
+        <p class="conta-acoes">
+            Deseja <a href="login.html" class="conta-link-sair">sair</a> da conta ou <a href="#" class="conta-link-excluir">excluir</a> seu perfil?
+        </p>
+    </div>
+</main>
+
     <footer> 
     <p><strong>ProxTalk:)</strong>  • Conectando pessoas e ideias de forma simples. © 2026</p>
 </footer>
