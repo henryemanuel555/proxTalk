@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProxTalk:) - Home</title>
+    <link rel="icon" type="image/x-icon" href="x-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripth.js" defer></script>
+</body>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>ProxTalk:)</h1>
+        
+        <a href="#">Torne-se moderador</a>
+    </header>
+    <!--Navegação-->
+    <div class="nav-bar">
+        <a href="homepg.html">Home</a>  
+        <a href="mensagens.html">Mensagens</a>
+        <a href="comunidades.html">Comunidade</a>
+        <a href="conta.html">Conta</a>
+        <a href="sobre.html">Sobre-nós</a>
+    </div><br>
+
+    <div class="container-fluid mt-4">
+       <div class="row">
+
+        <!--Perfil-->
+        <aside class="col-12 col-lg-3 mb-4">
+            <div class="card-perfil">
+                <div class="perfil-cabecalho">
+                    <div class="card-perfil">
+    <div class="perfil-cabecalho">
+        <img src="foto-usuario.jpg" alt="Foto de perfil" class="perfil-avatar">
+        
+        <div class="perfil-dados">
+            <span class="perfil-nome">Bilbo bolseiro</span><br>
+            <span class="perfil-arroba">@faizblaster555</span>
+            <div class="perfil-status">
+                <span class="status-bolinha"></span>
+                <span class="perfil-status">Online</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="perfil-bio">
+        Estudante de ads, gosto de café e boas conversas por aqui.<br>
+        Sou fã de tudo que você imaginar<br>
+        Compartilho um pouco da minha jornada aqui.<br>
+        Busque conhecimento!!!!!
+    </p>
+</div>
+            </div>
+        </aside>
+
+        <!--Post e postagens-->
+        <main class="col-12 col-lg-6">
+            <div class="criar-post">
+                <form class="form-post">
+                    <textarea class="campo-post" rows="4" placeholder="Digite seu post aqui..."></textarea>
+
+                    <div class="acoes-post">
+                        <label for="foto-post" class="btn-foto">📷 Adicionar foto</label>
+                        <input type="file" id="foto-post" class="input-arquivo" accept="image/*">
+                        <button type="submit" class="btn-enviar">Postar</button>
+                    </div>
+                </form>
+            </div>
+
+            <section class="feed-posts">
+                <article class="post-card">
+                    <div class="post-cabecalho">
+                        <span class="post-autor">V0wes</span>
+                        <img src="foto-vowes.jpg" class="post-avatar">
+                    </div>
+
+                    <img src="foto-m.jpg" class="post-imagem">
+                    <p class="post-comentario">Tão bom acordar e ter essa paisagem logo após abrir a porta.</p>
+
+                    <div class="post-rodape">
+                        <button class="btn-curtir">Curtir</button>   
+                        <button class="btn-comentario">Comentar</button>    
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-cabecalho">
+                        <span class="post-autor">Decade</span>
+                        <img src="decade.png" class="post-avatar">
+                    </div>
+
+                    <img src="d-post.png" class="post-imagem">
+                    <p class="post-comentario">O design é até legal, mas o lance dele usar o cinto no peitoral quebra a tradição dnv... pelo menos os outros riders usam normalmente LoL</p>
+
+                    <div class="post-rodape">
+                        <button class="btn-curtir">Curtir</button>  
+                        <button class="btn-comentario">Comentar</button>      
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!--For-you-->
+        <aside class="col-12 col-lg-3 mb-4">
+            <div class="card-para-voce">
+                <h2 class="para-voce-titulo">Para Você</h2>
+
+                <ul class="sugestoes-lista">
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="ana.png" alt="Ana Clara" class="sugestao-avatar">
+                            <span class="sugestao-nome">Ana Clara</span>
+                        </div>
+                        <button type="button" id="btn-seguir-1" class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="gabriel.png" alt="Gabriel Souza" class="sugestao-avatar">
+                            <span class="sugestao-nome">Gabriel Souza</span>
+                        </div>
+                        <button type="button" id="btn-seguir-2"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-vowes.jpg" alt="v0wes" class="sugestao-avatar">
+                            <span class="sugestao-nome">V0wes</span>
+                        </div>
+                        <button type="button" id="btn-seguir-3"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="foto-gabriel.jpg" alt="Bolonanaca" class="sugestao-avatar">
+                            <span class="sugestao-nome">Bolonanaca</span>
+                        </div>
+                        <button type="button" id="btn-seguir-4"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="carlinhos.jpg" alt="Carlinhos" class="sugestao-avatar">
+                            <span class="sugestao-nome">Lil Carl</span>
+                        </div>
+                        <button type="button" id="btn-seguir-5"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="zio.jpg" alt="zIo" class="sugestao-avatar">
+                            <span class="sugestao-nome">zIo-poorrider</span>
+                        </div>
+                        <button type="button" id="btn-seguir-6"  class="btn-seguir">+ Seguir</button>
+                    </li>
+
+                    <li class="sugestao-item">
+                        <div class="sugestao-usuario">
+                            <img src="sauron.jpg" alt="Sauron" class="sugestao-avatar">
+                            <span class="sugestao-nome">Sauron</span>
+                        </div>
+                        <button type="button" id="btn-seguir-7"  class="btn-seguir">+ Seguir</button>
+                    </li>
+                </ul>
+
+                <div class="para-voce-tags">
+                    <a href="#" class="tag-link">#Tecnologia</a>
+                    <a href="#" class="tag-link">#Arte</a>
+                    <a href="#" class="tag-link">#Design</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<footer> 
+    <p><strong>ProxTalk:)</strong>  • Conectando pessoas e ideias de forma simples. © 2026</p>
+</footer>
+    
+</body>
+</html>

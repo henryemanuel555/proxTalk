@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProxTalk:) - Mensagens</title>
+    <link rel="icon" type="image/x-icon" href="x-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <script src="scriptm.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" href="test.html" alt="Logo" class="logo">
+        <h1>ProxTalk:)</h1>
+        
+        <a href="#">Torne-se moderador</a>
+    </header>
+
+    <div class="nav-bar">
+        <a href="homepg.html">Home</a>  
+        <a href="mensagens.html">Mensagens</a>
+        <a href="comunidades.html">Comunidade</a>
+        <a href="conta.html">Conta</a>
+        <a href="sobre.html">Sobre-nós</a>
+    </div><br>
+ <!-- Contatos -->  
+<main class="container-fluid area-chat">
+        <div class="row g-3">
+
+            <div class="col-4">
+                <aside class="painel-contatos">
+                    <h2>Contatos</h2>
+
+                    <ul id="lista-contatos" class="lista-contatos">
+                        <li class="contato-item ativo" data-contato="Maria Silva" data-status="Online">
+                            <span class="contato-nome">Maria Silva</span>
+                            <span class="contato-preview">Oi! Você já terminou a serie que recomendei?</span>
+                        </li>
+                        <li class="contato-item" data-contato="João Pedro" data-status="Offline">
+                            <span class="contato-nome">João Pedro</span>
+                            <span class="contato-preview">Infelizmente não estou ocupado!</span>
+                        </li>
+                        <li class="contato-item" data-contato="Carla Souza" data-status="Online">
+                            <span class="contato-nome">Carla Souza</span>
+                            <span class="contato-preview">Vamos testar o gta VI quando?</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+<!--Conversa-->
+            <div class="col-8">
+                <section class="painel-conversa">
+                    <div class="topo-conversa">
+                        <h3 id="nome-ativo">Maria Silva</h3>
+                        <span id="status-ativo" class="status">Online</span>
+                    </div>
+
+                    <div id="caixa-mensagens" class="caixa-mensagens"></div>
+
+                    <form id="form-envio" class="form-envio">
+                        <input type="text" id="campo-msg" placeholder="Digite sua mensagem..." required autocomplete="off">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+   <footer> 
+    <p><strong>ProxTalk:)</strong>  • Conectando pessoas e ideias de forma simples. © 2026</p>
+</footer> 
+</body>
+</html>
