@@ -1,0 +1,136 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2f2e2d;
+  color: #e2eee8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: #2f2e2d;
+  color: #ffffff;
+  padding: 20px;
+  height: 80px;
+  display: flex;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 44px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Barlow', 'Bahnschrift', sans-serif; 
+  font-size: 20px;
+  font-weight: 700;          
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+
+}
+
+header a:hover{
+  color: #d49307;
+
+}
+
+header .logo {
+  height: 90px;
+  width: 90px;
+  display:flex;
+  justify-content: center;
+  z-index: 1000;
+  align-items: center;
+}
+
+.login-bar{
+  background-color: #3a3a3a;
+  height:40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+form {
+    background-color: #3a3a3a;
+    color: #f8fafc;
+    padding: 30px;
+    margin: 20px auto;
+    width: 360px;
+    max-width: 90%;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    border: 1px solid #eb8d30;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #eb8d30;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f4fbf7;
+    color: #101714;
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: #eb8d30;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #2f2e2d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9a410;
+}
+
+a {
+    color: #eb8d30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e9a410;
+}
+
+footer{
+  text-align: center;
+  margin-top: auto;
+  background-color: #272625;
+  height:40px;
+  padding: 10px;
+  color: #cccccc;
+}
